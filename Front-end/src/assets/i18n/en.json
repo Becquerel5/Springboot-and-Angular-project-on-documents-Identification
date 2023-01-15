@@ -1,0 +1,404 @@
+{
+    "REFRESH":"Refresh",
+    "CONFIRMRRETABLIR": "Restore ",
+    "CONFIRMREMOVESECTOR": "Are you sure you want to remove ",
+    "CONFIRMREMOVESECTORDISTRICT": "Remove all district in this sector before removing it. /n  Click on ok to continue",
+    "MORE":"More",
+    "IMEI":"IMEI",
+    "OK":"Ok",
+    "AGENTNAME":"Agent's name",
+    "SECTORNAME":"District name",
+    "ADDSELECTEDDISTRICT": "Add Selected District(s)",
+
+    "SECTORCOMMUNE":"Town",
+    "SECTORSTANDING":"Standing",
+    "SECTORPOPULATION":"Population",
+    "SECTORDENSITE":"Density",
+    "CHOIX": "Choice",
+
+    "COMMUNE": "Municipality",
+    "STANDING": "Standing",
+    "POPULATION": "Population",
+    "DENSITE": "Density",
+
+    "VERIFDOC":"Check the document",
+    "WAITINGCHECK":"Document pending verification",
+    "KODOC":"Unauthenticated document",
+    "SUIVI":"Tracking",
+    "OKDOC":"Authenticated document",
+
+    "SITENAME":"Site Name",
+    "NAME":"Last Name",
+    "SURNAME":"First Name",
+    "PHONE":"Phone Number",
+    "REGISTRER":"Registration Number",
+    "ACTION":"Actions",
+    "DESCRIPTION":"Description",
+    "OPEN":"Open",
+    "DETAIL":"Show the Details",
+    "SHOWARCHIV":"Show Archives",
+    "CNI":"Id Card",
+    "MAIL":"E-mail Adress",
+    "COUNTRY":"Nationality",
+    "POB":"Place of Birth",
+    "ADDR":"Address",
+
+    "LOCALISATION": "Location",
+    "SOUSZONE":"Subarea",
+    "SUPERFICIECONSTRUCTIBLE":"Buildable Area",
+    "HAUTEURMAXIMALE":"Maximum construction height (m)",
+    "COS":" Land Use Coefficient (%)",
+    "CES": "Footprint coefficient (%)",
+    "RECULVOIX":"Setback from the tracks (m)",
+    "DISTANCEMAISON":"Distance between Buildings (m)",
+    "IMPLANTATIONLIMITES":"Establishment of Dividing Limits",
+    "ESPACELIBRE":"Free Space",
+    "ESPACEPLANTE":"Planted Space",
+
+
+    "OWNERNAME":"Owner's name",
+    "OWNERPHONE":"Owner's Phone Number",
+    "SITE":"Site",
+    "EDIT":"Edit",
+    "DELETE":"Delete",
+    "ADD":"Add",
+    "DEVICE":"Device",
+    "INFOS":"Basic Information",
+    "SECTOR":"District",
+    "DOCNAME":"Document Name",
+    "DATE":{
+        "START":"Start Date",
+        "END":"End date",
+        "ASSIGN":"Assignment Date",
+        "SAVE":"Registration Date",
+        "DOB":"Date of Dirth",
+        "CREATE":"Creation Date"
+    },
+    "MATTOOLTIP":{
+        "ADDAGENT":"Add New Agent",
+        "REFRESHLISTAGENT":"Refresh the List of Agents",
+        "VIEUWDETAILAGENT":"View Information about the Selected Agent",
+        "ASSIGNAGENTLISTSECTOR":"Edit this Assignment",
+        "EDITSECTORLIST":"Edit the Selected District",
+        "DELSECTORLIST":"Delete the Selected District",
+        "DELETELISTSECTOR":"Delete this Assignment",
+        "OPENSITE":"Open the Selected Site",
+        "INTERRUPTSITE":"Interrupt the Work",
+        "ENDSITE":"Report the End of the Work",
+        "RESTAURESITE":"Activate Selected Site",
+        "CARD":"View Card",
+        "DELEMPLOYE":"Delete Employee",
+        "DELSITE":"Delete Site",
+        "DOWNLOAD":"Download",
+        "IMG":"View Image",
+        "AUDIO":"Listen to the Audio",
+        "VIDEO":"Watch the Video",
+        "DOC":"Display the Document"
+    },
+    "PLACEHOLDER":{
+        "SITEADDIMGSLT":"Select an Image",
+        "SITEADDREFE":"Site Reference",
+        "SITEADDNAME":"Name of the Site",
+        "SITEADDOWNERNAME":"Owner's name",
+        "SITEADDOWNERPHONE":"Owner's phone number",
+        "SITEADDOWNERCNI":"Owner's Id card number",
+        "SITEADDREFPOINT":"Point Reference",
+        "LOGINFORMLOGIN":"Enter your Username",
+        "LOGINFORMPWD":"Password",
+        "FILTER":"Filter",
+        "FORGETMAIL":"Enter your E-mail address",
+        "FORGETUSERNAME":"Enter your Username"
+    },
+    "BTN":{
+            "SUBMIT":"Submit",
+            "CANCEL":"Cancel",
+            "UPDATE":"Update",
+            "LOCATE":"Locate",
+            "RESET":"Reset",
+            "NEXT":"Next",
+            "PREVIEW":"Preview",
+            "CREATE":"Create Point",
+            "LOG":"Log In",
+            "NOTIFY":"Notify",
+            "MOTIFY":"Motivate",
+            "FORGOT":"Find my password",
+            "REST": "Reset",
+            "RELANCER": "Restart the Work"
+    },
+    "SITEADD":{
+        "SITEINFOS":"Site Information",
+        "SECTOR":"Your District",
+        "ERROR":"Choose a District",
+        "REPORT":"Report Site Coordinates",
+        "IMG":"Site Image",
+        "CONFIRMINFOS":"Validate this Information ?",
+        "END":"End"
+    
+    },
+    "LOGINFORM":{
+        "TITLE":"Login Form",
+        "LOGIN":"Username",
+        "PWD":"Password",
+        "REMEMBER":"Remember",
+        "FORGOT":"Forgot your Password ?"
+    },
+    "LISTSECTAGENT":{
+        "ERROR":"No Sector affect to this Agent",
+        "ADD":"Add a District to this Agent"
+    },
+    "LISTSECTOR":{
+        "AFFECT": "Add",
+        "ERROR":"No Sector Registered for the Moment",
+        "ADD":"Add a Sector",
+        "EDIT":"Edit this Sector"
+    },
+    "LISTSITEAGENLIST":{
+        "ERROR":"Stop Work",
+        "ADD":"Add a Site",        
+        "EDIT":"Edit the Site",
+        "CARDACTION":"Interact with the Card / Stop"
+    },
+    "LISTEMPLOYE":{
+        "ERROR":"No Employee Registered yet",
+        "ADD":"Add an Employee",        
+        "EDIT":"Edit this Employee"
+    },
+    "LISTDEVICEAGENT":{
+        "ERROR":"No Device Assigned yet"
+    },
+    "LISTDEVICE":{
+        "ERROR":"No Device Registered yet",
+        "ADD":"Add a New Device",
+        "LISTAGENTDEVICE":"List Devices by Agent"
+    },
+    "LISTALERT":{
+        "ERROR":"No Alert Recorded yet"
+    },
+    "LISTSECTORAGENT":{
+        "ERROR":"No Agent Assigned yet to Districts "
+    },
+    "LISTAGENT":{
+        "ERROR":"No Agent Registered yet",
+        "ADD":"Add a New Agent",
+        "LIST":"List of Agents Assigned to Districts"
+    },
+    "MENU":{
+        "GEMPLOYE":"Employee Management",
+        "GRULES":"Gestion des Regles d'Urbanisme",
+        "GSECTEURS":"Sector Management",
+        "GAGENT":"Agent Management",
+        "GDEVICE":"Device Management",
+        "GAUTHORISATION":"Authorization Management",
+        "GSITE":"Site Management",
+        "TABLEAU":"Dashboard",
+        "LOG":"Log Out",
+        "LANGEN":"English(EN_en)",
+        "LANGFR":"French(FR_fr)",
+        "ALERT":"Alerts"
+
+    },
+    "ADDALERT":{
+        "DISTRICT":"District",
+        "MSG":"Your Message",
+        "NOTIFICATION":"Notification Send To ",
+        "HELP":"Call Us",
+        "TITLE":"What is YUC",
+        "DESCRIPTION":"The Yaoundé Urban Community is a decentralized territorial collectivity which manages, under the supervision of the Cameroonian State, local affairs in order to ensure the economic, social and cultural development of the populations of the city of Yaoundé.",
+        "MORE":"More Informations",
+        "BTN":"Send",
+        "SENDALERT":"Send an Alert to YUC Through this Channel."
+    },    
+    "ADDDOCUMENT":{
+        "ADD":"Addition of a New Document",
+        "DOCSELECT":"Select Document",
+        "TYPE":"Document Type",
+        "DOCACTE":"Acte Administrafs",
+        "DOCNUMERO":"Numéro du Document",
+        "MSG":"Choose a Document Type",
+        "CHOISE":"Choose the Document"
+    },
+    "ADDEDITAGENT":{
+        "TITLE":"Agent Information",
+        "MSG":"Already Used"
+    },
+    "ADDEDITEMPLOYE":{
+        "DETAIL":"Details About this Employee",
+        "DELETE":"Delete this Employee",
+        "INFOS":"Employer Information",
+        "MSG":"Already Used",
+        "SEXE":"Employee Gender",
+        "SEXEERROR":"Choose your Gender"
+    },
+    "ADDEDITSECTOR":{
+        "INFOS":"City Information"
+    },
+    "AFFECTAGENTDEVICE":{
+        "TITLE":"Assign a Device",
+        "BTN":"Assign",
+        "ERROR":"Choose a Device",
+        "AGENT":"Agent",
+        "LABEL":"Device"
+    },
+    "AFFECTAGENTSECTOR":{
+        "TITLE":"Assign a District",
+        "BTN":"Assign",
+        "ERROR":"Choose a District",
+        "AGENT":"Agent",
+        "LABEL":"District"
+    },
+    "PWDEMPLOYE":{
+        "OLD":"Enter your Former Password",
+        "NEW":"Enter your New Password",
+        "CONFIRM":"Confirm your New Password",
+        "ERROR":"Password are Different",
+        "CHECKBOX":"Remember Me"
+    },
+    "DASHBOARD":{
+        "ERROR":"No activity to Note",
+        "ACTAGENT":"Agent's activities",
+        "NOTIVATION":"Notify this Agent",
+        "NAMEAGENT":"Agent's name",
+        "AGENTACTION":"Action Realised",
+        "ACTIVE":"Most Active Agents",
+        "ACTIONS":"Number of Actions",
+        "INACTIVE":"Least Active Agents",
+        "SITECOMPLETE":"Archived Sites",
+        "SITESTOP":"Interrupted Sites",
+        "DATE":"Date"
+    },
+    "NEWID":{
+        "TITLE":"Please Define your New Login Details",
+        "LOGIN":"Login",
+        "ERRORLOGIN":"This Login is Already Used",
+        "PWD":"Password",
+        "CONFIRM":"Confirm your Password",
+        "ERRORPWD":"Passwords are Different"
+    },
+    "AGENTDETAIL":{
+        "ASSIGNSECTOR":"Assign a District",
+        "ASSIGNDEVICE":"Assign a Device",
+        "SECTORLIST":"List of Districts",
+        "DEVICELIST":"List of Devices",
+        "STATUS":"Status"
+    },
+    "EMPLOYEDETAIL":{
+        "TITLE":"Change Password",
+        "NAME":"Last Name",
+        "PRENOM":"First Name",
+        
+        "SEXE":"Gender"
+    },
+    "ALERTDETAIL":{
+        "ALERTLIST":"List of Alerts",
+        "ISSUER":"Transmiter's name",
+        "ISSUERNUMBER":"Transmiter's number",
+        "LOCATOR":"District",
+        "DATE":"Alert Sending Date",
+        "MSG":"Alert Message"
+    },
+    "DEVICEDETAIL":{
+        "STATUS":"Status"
+    },
+    "SITEDETAIL":{
+        "REF":"Site Reference",
+        "NEWDOC":"Add a New Document",
+        "CONTACT":"Coordinates Related to the Site",
+        "DOCS":"Documents Related to the Site",
+        
+        "POINT":"Point Name",
+        "X":"X axis",
+        "Y":"Y axis"
+    },
+    "ADDEDITDEVICE":{
+        "TITLE":"Device Information"
+    },
+    "EDITARIGHT":{
+        "TITLE":"Title of the Right"
+    },
+    "EDITGROUP":{
+        "TITLE":"Title of the Group"
+    },
+    "EDITARIGHTGROUP":{
+        "TITLE":"Assign a Right to a Group",
+        "TITLETWO":"Title of the Right",
+        "EMPLOYER":"Choose an Employee",
+        "NAME":"Group Title",
+        "ERROR":"Choose a Group"
+    },
+    "EDITEMPLOYEGROUP":{
+        "TITLE":"Assign an Employee to a Group",
+        "TITLETWO":"Employee's name",
+        "EMPLOYER":"Choose an Employee",
+        "NAME":"Group Title",
+        "ERROR":"Choose a Group"
+    },
+    "HOME":{
+        "TITLE":"Hello Angular with ngx Translate",
+        "TEXT":"This demo has been created using ngx translate",
+        "SELECT":"Select a Language"
+    },
+    "LANGUAGE":{
+        "TEXT":"English Version"
+    },
+    "FORGOTPWD":{
+        "TITLE":"Forgot your Password ?",
+        "DESCRIPTION":"Enter your Username and E-mail address; we will send your password to you.",
+        "LOGIN":"Login",
+        "MAIL":"E-mail Address",
+        "DIR":"Login Page"
+    },
+    "HABILITATION":{
+        "ASSEMPLOYE":"Assign an Employee to a Group",
+        "EMPLOYENAME":"Employee's name",
+        "EMPLOYERSELECT":"Select an Employee",
+        "GROUPNAME":"Group Title",
+        "GROUPERROR":"Select a Group",
+        "EMPLOYE":"Employee",
+        "ASSDATE":"Assign a Date",
+        "GROUPRIGHT":"Assign Right to a Group",
+        "GROUPRIGHTTITLE":"Title of the Access Right",
+        "RIGHTNAME":"Right Title",
+        "MANARIGHT":"Management of Access Right",
+        "POSITION":"Position",
+        "MANGROUP":"Group Management"
+    },
+
+    "EMPTY":"Empty",
+    
+    "DISTLIST": "List of Districts",
+    "SITELIST": "List of Sites ",
+    "QUARTIER": "Districts",
+    "ALCITOYEN": "CITIZEN ALERTS",
+    "ALSYSTEM": "SYSTEM ALERTS",
+    "ADDDIST":"Add One or More Districts",
+    "WAIT": "Wait ...",
+    "ADDDISTR": "Add to ",
+    "DELDISTR": "Remove to ",
+    "SEARCH": "Search: ",
+    "MOTIFINTERRUP": "Reason for Interrupting Work on this Site",
+    "MOTIFRELANCEMENT": "Reason for Relaunching Work on this Site",
+    "PERMITCONST": "Building Permit",
+    "PERMITIMPLA": "Permit to set up",
+    "INTERRUP": "Interrupt",
+    "RELANCEMENT": "Relaunch",
+    "NAMEDOCERROR": "Enter the Name of the Document",
+    "TYPEDOCERROR":"Choose the Type of File",
+    "CHOIXFILEERROR": "Choose a File",
+    "ABSCONSTRUIRE": "Absence of Building Permit",
+    "ABSIMPLANTER": "Absence of Permit to Set Up",
+    "SERVIPUBLIC": "Public Bondage",
+    "MODIFLOTISS": "Modification of the Subdivision",
+    "PUBLICETA":"Encroachment on the Public Domain of the State",
+    "PRIVEETAT": "Encroachment on the Private Domain of the State",
+    "COLLECTDESC": "Encroachment of the Domain of the Decentralized Territorial Collectivities",
+    "NORMEURBANIS": "Non Respect of the General Rules of Urbanism and Construction",
+    "CONFIRMINTERRUP": "The Work on this Site is Interrupted with Success. Click out of this window to exit",
+    "CONFIRMRELANCE": "The work on this site is relaunched with success. Click out of this window to exit",
+    "CONFIRMUPLOAD": "The document has been sent with success. Click out of this window to exit",   
+    "CONVOCATION": "Convocation",
+    "ACTIONL":{
+        "DETAIL":"Detail",
+        "EDIT" :"Modifcation",
+        "DELETE": "Delete"
+    }
+}

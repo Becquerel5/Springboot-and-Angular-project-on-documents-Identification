@@ -1,0 +1,418 @@
+{
+    "REFRESH":"Rafraîchir",
+    "CONFIRMRRETABLIR": "Rétablir ",
+    "CONFIRMREMOVESECTOR": "Etes vous sûre de vouloir supprimer ",
+    "CONFIRMREMOVESECTORDISTRICT": "Supprimer au prealable tous les quartiers present dans ce secteur avant de le supprimer. /n Clicker sur ok pour continuer",
+    "IMEI":"IMEI",
+    "AGENTNAME":"Nom de l'agent",
+    "EMPTY":"Vide",
+    "OK":"Ok",
+    "SECTORNAME":"Nom du secteur",
+    "DISTLIST": "Liste des Quartiers",
+    "SITELIST": "Liste des Sites : ",
+    "QUARTIER": "Quartier",
+    "LOCALISATION": "Localisation",
+    "SOUSZONE":"Sous Zone",
+    "SUPERFICIECONSTRUCTIBLE":"Superficie Constructible",
+    "HAUTEURMAXIMALE":"Hauteur Maximale des Constructions (m)",
+    "COS":"Coefficient d'Occupation des Sols (%)",
+    "CES": "Coefficient d'Emprise au Sol (%)",
+    "RECULVOIX":"Recul par rapport aux Voies (m)",
+    "DISTANCEMAISON":"Distance Entre les Constructions (m)",
+    "IMPLANTATIONLIMITES":"Implantation des Limites Separatives",
+    "ESPACELIBRE":"Espace Libre",
+    "ESPACEPLANTE":"Espace Planté",
+    "ALCITOYEN": "ALERTES CITOYENNES",
+    "ALSYSTEM": "ALERTES SYSTEMES",
+    "ADDSELECTEDDISTRICT": "Ajouter le / les Quartier Selectiones",
+    "ADDDIST":"Ajouter un/les Quartier(s)",
+    "CHOIX": "Choix",
+    "WAIT": "Patientez ...",
+    "ADDDISTR": "Ajouter au ",
+    "DELDISTR": "Retirer au ",
+    "SEARCH": "Recherche: ",
+    "MORE": "Plus de Détail",
+    "MOTIFINTERRUP": "Motif d'interruption des travaux sur ce Site",
+    "MOTIFRELANCEMENT": "Motif de Relancement des Travaux sur ce site",
+    "PERMITCONST": "Permit de Construire",
+    "PERMITIMPLA": "Permit d'Implanter",
+    "INTERRUP": "Interrumpre",
+    "RELANCEMENT": "Relancer",
+    "NAMEDOCERROR": "Saisir le Nom du Document",
+    "TYPEDOCERROR":"Choisir le Type du Fichier",
+    "CHOIXFILEERROR": "Choisir un Fichier",
+    "ABSCONSTRUIRE": "Abscence du Permis de Construire",
+    "ABSIMPLANTER": "Abscence du Permis d'Implanter",
+    "SERVIPUBLIC": "Servitude Publique",
+    "MODIFLOTISS": "Modification du Lotissement",
+    "PUBLICETA":"Empiétement du Domaine Public de l'Etat",
+    "PRIVEETAT": "Empiétement du Domaine Prive de l'Etat",
+    "COLLECTDESC": "Empiétement du domaine des Collectivites Territoriales Decentralisées",
+    "NORMEURBANIS": "Non Respect des Règles Générales d'Urbanisme et de Construction",
+    "CONFIRMINTERRUP": "Les travaux sur ce Site sont Interrompus avec success. Cliquer hors de cette fenetre pour sortir",
+    "CONFIRMRELANCE": "Les travaux sur ce site sont relancés avec succes. Cliquer hors de cette fenetre pour sortir",
+    "CONFIRMUPLOAD": "Le document a été envoyé avec succes. Cliquer hors de cette fenetre pour sortir",
+    "SECTORCOMMUNE":"Commune",
+    "SECTORSTANDING":"Standing",
+    "SECTORPOPULATION":"Population",
+    "SECTORDENSITE":"Densité",
+
+    "VERIFDOC":"Vérifier le document",
+    "WAITINGCHECK":"Document en attente de vérification",
+    "KODOC":"Document non authentifié",
+    "SUIVI":"Suivis",
+    "OKDOC":"Document authentifié",
+
+    "SITENAME":"Nom du Site",
+    "NAME":"Nom",
+    "SURNAME":"Prénom",
+    "PHONE":"Numéro de téléphone",
+    "REGISTRER":"Matricule",
+    "ACTION":"Actions",
+    "DESCRIPTION":"Description",
+    "OPEN":"Ouvrir",
+    "DETAIL":"Détails",
+    "SHOWARCHIV":"Voir les Archives",
+    "CNI":"CNI",
+    "MAIL":"Adresse email",
+    "COUNTRY":"Nationalité",
+    "POB":"Lieu de naissance",
+    "ADDR":"Adresse",
+    "OWNERNAME":"Nom du propriétaire",
+    "OWNERPHONE":"Numéro de téléphone du propriétaire",
+    "SITE":"Site",
+    "EDIT":"Modifier",
+    "DELETE":"Supprimer",
+    "ADD":"Ajouter",
+    "DEVICE":"Périphérique",
+    "INFOS":"Informations Basiques",
+    "SECTOR":"Secteur",
+    "DOCNAME":"Nom du Document",
+    "COMMUNE": "Commune",
+    "STANDING": "Standing",
+    "CARTE": "Carte",
+    "POPULATION": "Population",
+    "DENSITE": "Densité",
+    "CONVOCATION": "Convocation",
+    "DOCUMENT_VERIFIED":"Documents à Vérifier",
+
+    "DATE":{
+        "START":"Date de Début",
+        "END":"Date de Fin",
+        "ASSIGN":"Date d'Affectation",
+        "SAVE":"Date d'Enregistrement",
+        "DOB":"Date de Naissance",
+        "CREATE":"Date de Création"
+    },
+    "MATTOOLTIP":{
+        "ADDAGENT":"Ajouter un Nouvel Agent",
+        "REFRESHLISTAGENT":"Raffraîchir la Liste des Agents",
+        "VIEUWDETAILAGENT":"Afficher les Informations sur l'Agent Sélectionné",
+        "ASSIGNAGENTLISTSECTOR":"Modifier cette Affectation",
+        "EDITSECTORLIST":"Modifier le Secteur Sélectionné",
+        "DELSECTORLIST":"Supprimer le Secteur Sélectionné",
+        "DELETELISTSECTOR":"Supprimer cette Affectation",
+        "OPENSITE":"Ouvrir le Site Sélectionné",
+        "INTERRUPTSITE":"Interrompre le Travail",
+        "ENDSITE":"Signalez la Fin des Travaux",
+        "RESTAURESITE":"Activer les Sites Sélectionnés",
+        "CARD":"Voir la Carte",
+        "DELEMPLOYE":"Supprimer l'Employé",
+        "DELSITE":"Supprimer le Site",
+        "DOWNLOAD":"Télécharger",
+        "IMG":"Voir l'Image",
+        "AUDIO":"Écoutez l'Audio",
+        "VIDEO":"Regarder la Vidéo",
+        "DOC":"Afficher le Document"
+    },
+    "PLACEHOLDER":{
+        "SITEADDIMGSLT":"Sélectionnez une Image",
+        "SITEADDREFE":"Référence du Site",
+        "SITEADDNAME":"Nom du Site",
+        "SITEADDOWNERNAME":"Nom du Propriétaire",
+        "SITEADDOWNERPHONE":"Numéro de Téléphone du Propriétaire",
+        "SITEADDOWNERCNI":"Numéro de CNI du Propriétaire",
+        "SITEADDREFPOINT":"Référence du Point",
+        "LOGINFORMLOGIN":"Entrez votre Nom d'Utilisateur",
+        "LOGINFORMPWD":"Mot de Passe",
+        "FILTER":"Filtrer",
+        "FORGETMAIL":"Entrez votre Adresse mail",
+        "FORGETUSERNAME":"Entrez votre Nom d'Utilisateur"
+    },
+    "SITEADD":{
+        "SITEINFOS":"Information du Site",
+        "SECTOR":"Votre Secteur",
+        "ERROR":"Choisissez un secteur",
+        "REPORT":"Envoyer les Coordonnées du Site",
+        "IMG":"Image du Site",
+        "CONFIRMINFOS":"Validez vous cette information ?",
+        "END":"Terminer"
+    
+    },
+    "LOGINFORM":{
+        "TITLE":"Formulaire de Connexion",
+        "LOGIN":"Nom d'Utilisateur",
+        "PWD":"Mot de passe",
+        "REMEMBER":"Se Souvenir",
+        "FORGOT":"Mot de Passe Oublié ?"
+    },
+    "LISTSECTAGENT":{
+        "ERROR":"Aucun Secteur affectée à cet Agent",
+        "ADD":"Ajouter un Secteur à cet Agent"
+    },
+    "LISTSECTOR":{
+        "ERROR":"Aucun Secteur Enregistré pour l'Instant",
+        "ADD":"Ajouter un Secteur",
+        "EDIT":"Modifier ce Secteur",
+        "AFFECT": "Ajouter"
+    },
+    "ACTIONL":{
+        "DETAIL":"Détails",
+        "EDIT" :"Modifcation",
+        "DELETE": "Supprimer"
+    },
+    "LISTSITEAGENLIST":{
+        "ERROR":"Interompre les Travaux",
+        "RELOAD":"Relancer les Travaux",
+        "ADD":"Ajouter un Site",        
+        "EDIT":"Modifier ce Site",
+        "CARDACTION":"Interagir avec la Carte / Stop "
+    },
+    "LISTEMPLOYE":{
+        "ERROR":"Aucun Employé Inscrit pour le Moment",
+        "ADD":"Ajouter un Employé",        
+        "EDIT":"Modifier cet Employé"
+    },
+    "LISTDEVICEAGENT":{
+        "ERROR":"Aucun Appareil Attribué pour le Moment"
+    },
+    "LISTDEVICE":{
+        "ERROR":"Aucun Périphérique Enregistré pour le Moment",
+        "ADD":"Ajouter un Périphérique",
+        "LISTAGENTDEVICE":"Lister les Périphériques par Agent"
+    },
+    "LISTALERT":{
+        "ERROR":"Aucune Alerte Enregistrée pour le Moment"
+    },
+    "LISTSECTORAGENT":{
+        "ERROR":"Aucun Agent Affecté aux Secteurs pour le Moment"
+    },
+    "LISTAGENT":{
+        "ERROR":"Aucun Agent Enregistré pour le Moment",
+        "ADD":"Ajouter un Nouvel Agent",
+        "LIST":"Liste des Agents Affectés aux Secteurs"
+    },
+    "MENU":{
+        "GEMPLOYE":"Gestion des Employés",
+        "GRULES":"Gestion des Regles d'Urbanisme",
+        "GSECTEURS":"Gestion des Secteurs",
+        "GAGENT":"Gestion des Agents",
+        "GDEVICE":"Gestion des Périphériques",
+        "GAUTHORISATION":"Gestion des Habilitations",
+        "GSITE":"Gestion des Sites",
+        "TABLEAU":"Tableau de Bord",
+        "LOG":"Déconnexion",
+        "LANGFR":"Français(FR_fr)",
+        "LANGEN":"Anglais(AN_an)",
+        "INTERFACE":"Interfaçage",
+        "ALERT":"Alertes"
+
+    },
+    "ADDALERT":{
+        "DISTRICT":"Quartier",
+        "MSG":"Choisir un Message",
+        "NOTIFICATION":"Notification Envoyé à ",
+        "HELP":"Appelez Nous",
+        "TITLE":"C'est quoi la CUY",
+        "DESCRIPTION":"La Communauté Urbaine de Yaoundé est une collectivité territoriale décentralisée qui gère sous la tutelle de l’État camerounais, les affaires locales en vue d’assurer le développement économique social et culturel des populations de la ville de Yaoundé.",
+        "MORE":"Plus d'Infos",
+        "SENDALERT":"Envoyer une alerte à la CUY par ce canal, pour signaler un problème se trouvant sur la liste ci-dessous.",
+        "DESC": "Entrez Votre Message"
+
+    },
+    "BTN":{
+        "SUBMIT":"Envoyer",
+        "CANCEL":"Annuler",
+        "UPDATE":"Mettre à jour",
+        "LOCATE":"Localiser",
+        "RESET":"Réinitialiser",
+        "NEXT":"Suivant",
+        "PREVIEW":"Précédent",
+        "CREATE":"Créer un Point",
+        "LOG":"Connexion",
+        "NOTIFY":"Notifier",
+        "MOTIFY":"Motiver",
+        "FORGOT":"Retrouver mon Mot de Passe",
+        "RELANCER": "Relancer les Travaux",
+        "REST": "Annuler"
+    },
+    "ADDDOCUMENT":{
+        "ADD":"Ajouter un Nouveau Document",
+        "DOCNAME":"Nom du document",
+        "DOCSELECT":"Sélectionner un Document",
+        "TYPE":"Type de Document",
+        "DOCACTE":"Acte Administrafs",
+        "DOCNUMERO":"Numéro du Document",
+        "MSG":"Choisissez un type de Document",
+        "CHOISE":"Choisissez le Document"
+    },
+    "ADDEDITAGENT":{
+        "TITLE":"Informations sur un Agent",
+        "MSG":"déjà utilisé"
+    },
+    "ADDEDITEMPLOYE":{
+        "DETAIL":"Détails sur cet employé",
+        "DELETE":"Supprimer cet Employé",
+        "INFOS":"Informations sur un Employer",
+        "MSG":"Déjà Utilisé",
+        "SEXE":"Sexe de l'Employé",
+        "SEXEERROR":"Choisissez votre Sexe"
+    },
+    "ADDEDITSECTOR":{
+        "INFOS":"Informations sur un Secteur"        
+    },
+    "AFFECTAGENTDEVICE":{
+        "TITLE":"Affecter un Périphérique",
+        "BTN":"Affecter",
+        "ERROR":"Choisissez un Périphérique",
+        "AGENT":"Agent",
+        "LABEL":"Périphérique"
+    },
+    "AFFECTAGENTSECTOR":{
+        "TITLE":"Affecter un Secteur",
+        "BTN":"Affecter",
+        "ERROR":"Choisissez un Secteur",
+        "AGENT":"Agent",
+        "LABEL":"Secteur"
+    },
+    "PWDEMPLOYE":{
+        "OLD":"Saisissez votre Ancien Mot de Passe",
+        "NEW":"Saisissez votre Nouveau Mot de Passe",
+        "CONFIRM":"Confirmer votre Nouveau Mot de Passe",
+        "ERROR":"Les Mots de Passe sont Différents",
+        "CHECKBOX":"Se Souvenir de Moi"
+    },
+    "DASHBOARD":{
+        "ERROR":"Aucune Activité à Noter",
+        "ACTAGENT":"Activités des Agents",
+        "NOTIVATION":"Notifier l'Agent",
+        "NAMEAGENT":"Nom de l'Agent",
+        "AGENTACTION":"Action Effectuée",
+        "ACTIVE":"Agents les plus Actifs",
+        "ACTIONS":"Nombre d'Actions",
+        "INACTIVE":"Agents les Moins Actifs",
+        "SITECOMPLETE":"Sites Archivés",
+        "SITESTOP":"Sites Interrompus",
+        "DATE":"Date",
+        "RELANCEMENT":"Relancement" ,
+        "DETAILS" : "Détails"
+    },
+    "NEWID":{
+        "TITLE":"Veuillez définir vos nouveaux identifiants",
+        "LOGIN":"Nom d'Utilisateur",
+        "ERRORLOGIN":"Ce nom d'utilisateur est déjà utilisé",
+        "PWD":"Mot de Passe",
+        "CONFIRM":"Confirmer votre mot de passe",
+        "ERRORPWD":"Les mots de passe sont différents"
+    },
+    "AGENTDETAIL":{
+        "ASSIGNSECTOR":"Affecter un secteur",
+        "ASSIGNDEVICE":"Affecter un périphérique",
+        "SECTORLIST":"Liste des secteurs",
+        "DEVICELIST":"Liste des périphériques",
+        "STATUS":"Statut"
+    },
+    "EMPLOYEDETAIL":{
+        "TITLE":"Changer le mot de passe",
+        "NAME":"Nom",
+        "PRENOM":"Prénom",
+        "SEXE":"Sexe"
+    },
+    "ALERTDETAIL":{
+        "ALERTLIST":"Liste des Alertes",
+        "ISSUER":"Nom de l'émetteur",
+        "ISSUERNUMBER":"Numéro de l'émetteur",
+        "INFOS":"Informations Basiques",
+        "LOCATOR":"Quartier",
+        "DATE":"Date d'envoi de l'alerte",
+        "MSG":"Message de l'alerte",
+        "DESC": "Description de l'alerte"
+    },
+    "DEVICEDETAIL":{
+        "IMEI":"IMEI du périphérique",
+        "NAME":"Nom du périphérique",
+        "DESCRIPTION":"Description",
+        "INFOS":"Informations basiques",
+        "STATUS":"Statut",
+        "DATE":"Date de création"
+    },
+    
+    "SITEDETAIL":{
+        
+        "REF":"Référence du site",
+        "NEWDOC":"Ajouter un nouveau document ",
+        "CONTACT":"Coordonnées relatifs à ce site",
+        "DOCS":"Documents relatifs à ce site",
+        "DOCNAME":"Nom du document",
+        "DOCSAVE":"Date d'enregistrement",
+        "POINT":"Nom du point",
+        "X":"Axe des abscisses",
+        "Y":"Axe des ordonnées"
+    },
+    "ADDEDITDEVICE":{
+        "TITLE":"Informations sur un périphérique"
+    },
+    "EDITARIGHT":{
+        "TITLE":"Intitulé du droit"
+    },
+    "EDITGROUP":{
+        "TITLE":"Intitulé du groupe"
+    },
+    "EDITARIGHTGROUP":{
+        "TITLE":"Affecter un droit à un Groupe",
+        "TITLETWO":"Intitulé du droit d'accès",
+        "EMPLOYER":"Choisissez un employé",
+        "NAME":"Intitulé du groupe",
+        "ERROR":"Choisissez un groupe"
+    },
+    "EDITEMPLOYEGROUP":{
+        "TITLE":"Affecter un employé à un Groupe",
+        "TITLETWO":"Nom de l'employé",
+        "EMPLOYER":"Choisissez un employé",
+        "NAME":"Intitulé du groupe",
+        "ERROR":"Choisissez un groupe"
+    },
+    "HOME":{
+        "TITLE":"Bonjour, Angular avec ngx translate",
+        "TEXT":"Cette démo a eté créée avec ngx translate",
+        "SELECT":"Choisir une langue"
+    },
+    "LANGUAGE":{
+        "TEXT":"Version Française"
+    },
+    "FORGOTPWD":{
+        "TITLE":"Mot de passe oublié ?",
+        "DESCRIPTION":"Saisissez votre nom d'utilisateur et votre adresse email; nous vous enverrons votre mot de passe.",
+        "LOGIN":"Nom d'utilisateur",
+        "MAIL":"Adresse Mail",
+        "DIR":"Page de connexion"
+    },
+    "HABILITATION":{
+        "ASSEMPLOYE":"Affecter un employé à un Groupe",
+        "EMPLOYENAME":"Nom de l'employé",
+        "EMPLOYERSELECT":"Choisissez un employé",
+        "GROUPNAME":"Intitulé du groupe",
+        "GROUPERROR":"Choisissez un groupe",
+        "EMPLOYE":"Employé",
+        "ASSDATE":"Affecter une date",
+        "GROUPRIGHT":"Affecter des droits à un groupe",
+        "GROUPRIGHTTITLE":"Intitulé du droit d'accès",
+        "RIGHTNAME":"Intitulé du droit",
+        "MANARIGHT":"Gestion des droits d'accès",
+        "POSITION":"Position",
+        "MANGROUP":"Gestion des groupes"
+    }
+}
+
+
+

@@ -1,0 +1,61 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="content-wrapper" style="min-height: 412px;">
+  <div class="container-fluid">
+    <app-breadcrumb-agent></app-breadcrumb-agent>
+  </div>
+<section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <table id="example" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Gender</th>
+                    <th>Profession</th>
+                    <th>Addresse</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody *ngIf="isEmpty">
+                <tr  >
+                  <td colspan="7"><h1>{{message}}</h1></td>
+                </tr>
+            </tbody>
+            <tbody *ngIf="!isEmpty">
+                  <tr *ngFor="let referencedoc of referencedocs;let indexOfelement=index" >
+                    <td>{{indexOfelement +1 }}</td>
+                    <td>{{referencedoc.firstName}}</td>
+                    <td>{{referencedoc.lastName}}</td>
+                    <td>{{referencedoc.gender}}</td>
+                    <td>{{referencedoc.profession}}</td>
+                    <td>{{referencedoc.address}}</td>
+                    <td [align]="'center'">
+                      <button (click)="referencedocumentDetails(referencedoc.idDocumentReference)" class='btn btn-sm btn-success'>Add Documents</button>&nbsp;
+
+                    </td>
+                  </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Gender</th>
+                <th>Profession</th>
+                <th>Addresse</th>
+                <th>Action</th>
+                </tr>
+            </tfoot>
+        </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>
+

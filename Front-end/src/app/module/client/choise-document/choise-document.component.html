@@ -1,0 +1,25 @@
+<div class="login-page" style="min-height: 512.781px;">
+  <div class="login-box">
+    <div class="login-logo">
+      <a>Welcome <br><b>{{ email }}</b></a>
+    </div>
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Choice your reference document</p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group ">
+              <button (click)="onSetCni()" class="btn btn-primary btn-block">CNI</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <button (click)="onSetPassPort()" class="btn btn-primary btn-block">PassPort</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

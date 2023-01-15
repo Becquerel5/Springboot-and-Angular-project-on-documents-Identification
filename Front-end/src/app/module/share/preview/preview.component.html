@@ -1,0 +1,163 @@
+<div class="layout-top-nav" style="height: auto;">
+  <div class="wrapper">
+    <div class="content">
+      <div class="content-header">
+        <div class="container">
+          <div class="row mb-2">
+            <div class="col-sm-12">
+              <app-stepper-header [treatementStep]="treatementStep" [currentStep]="stepSize"></app-stepper-header>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card card-primary card-outline">
+                    <div class="card-body box-profile">
+                      <div class="text-center"  *ngIf="this.typeOfUserConnect=='CLIENT'">
+                        <img class="profile-user-img img-fluid img-circle" [src]="this.imageStatus.getMessage()" alt="User profile picture">
+                      </div>
+                      <div class="text-center"  *ngIf="this.typeOfUserConnect=='AGENT'" (click)="onTakePhoto()" >
+                        <img class="profile-user-img img-fluid img-circle" [src]="this.imageStatus.getMessage()" alt="User profile picture">
+                      </div>
+
+                      <h3 class="profile-username text-center">{{ dataReference?.firstName }}</h3>
+                      <p class="text-muted text-center">{{ dataReference?.lastName }}</p>
+                      <p class="text-muted text-center" *ngIf="this.imageStatus.getUpload()">
+                        <button class="btn btn-primary" (click)="uploadFile()" style="margin-right: 5px;">Upload</button>
+                        <button class="btn btn-danger" (click)="onReset()" >Reset</button>
+                      </p>
+                      <p class="text-muted text-center" *ngIf="imageStatus.getViewUploadBtn()" >
+                        <i class='fa fa-spinner fa-spin fa-3x'></i>
+                      </p>
+                      <ul class="list-group list-group-unbordered mb-3">
+                        <li class="list-group-item">
+                          <b>Date of birth</b> <a class="float-right">{{ api.getTenFirstCharacter(dataReference?.dateOfBirth) }}</a>
+                        </li>
+                        <li class="list-group-item">
+                          <b>Gender</b> <a class="float-right">{{ api.getTenFirstCharacter(dataReference?.gender) }}</a>
+                        </li>
+                        <li class="list-group-item">
+                          <b>Profession</b> <a class="float-right">{{ api.getTenFirstCharacter(dataReference?.profession) }}</a>
+                        </li>
+                        <li class="list-group-item">
+                          <b>Address</b> <a class="float-right">{{ dataReference?.address }}</a>
+                        </li>
+                        <li class="list-group-item">
+                          <b>Id
+                            <span *ngIf="type=='passPort'">PassPort</span>
+                            <span *ngIf="type=='cni'">CNI</span>
+                          </b>
+                          <a class="float-right">{{ dataReference?.documentNumber }}</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-9">
+                  <div class="card">
+                    <div class="card-header p-2">
+                      <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#information" data-toggle="tab">Information</a></li>
+                        <li class="nav-item" *ngIf="this.typeOfUserConnect=='AGENT' && type =='cni'"><a class="nav-link" href="#addFiles" data-toggle="tab">Add Information</a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" (click)="onPrint()" style="cursor: pointer;"> <i class="fa fa-print" aria-hidden="true"></i>Print</a></li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <div class="tab-content">
+                        <div class="tab-pane active" id="information">
+                          <form class="form-horizontal">
+                            <div class="form-group row">
+                              <label for="inputName" class="col-sm-2 col-form-label">Father Name</label>
+                              <div class="col-sm-10">
+                                <span class="form-control">{{ dataReference?.nameOfFather }}</span>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputEmail" class="col-sm-2 col-form-label">Mother Name</label>
+                              <div class="col-sm-10">
+                                <span class="form-control">{{ dataReference?.nameOfMother }}</span>
+                              </div>
+                            </div>
+                            <div class="form-group row" *ngIf="type=='passPort'">
+                              <label for="inputName2" class="col-sm-2 col-form-label">Country</label>
+                              <div class="col-sm-10">
+                                <span class="form-control">{{ dataReference?.country }}</span>
+                              </div>
+                            </div>
+                            <div class="form-group row" *ngIf="type=='cni'">
+                              <label for="inputName2" class="col-sm-2 col-form-label">Poste</label>
+                              <div class="col-sm-10">
+                                <span class="form-control">{{ dataReference?.posteIdentification }}</span>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputName2" class="col-sm-2 col-form-label">Date de delivrance</label>
+                              <div class="col-sm-10">
+                                <span class="form-control">{{  api.getTenFirstCharacter(dataReference?.deliveryDate) }}</span>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="inputName2" class="col-sm-2 col-form-label">Date d'expiration</label>
+                              <div class="col-sm-10">
+                                <span class="form-control">{{  api.getTenFirstCharacter(dataReference?.expirationDate) }}</span>
+                              </div>
+                            </div>
+
+                            <div class="row text-right" *ngIf="this.typeOfUserConnect=='AGENT'">
+                              <div class="col-sm-12">
+                                <button (click)="onValidate()" class='btn btn-sm btn-success'>Validate</button>&nbsp;
+                              </div>
+                            </div>
+
+                          </form>
+                        </div>
+                        <div class="tab-pane"   *ngIf="this.typeOfUserConnect=='AGENT' && type =='cni'"  id="addFiles">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <app-add-files [type]="type" [id]="idRef"></app-add-files>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+<div *ngIf="takeImage" class="card card-primary maximized-card" style="height: 113px; width: 314.25px; transition: all 0.15s ease 0s;">
+  <div class="card-header">
+    <h3 class="card-title">Maximizable</h3>
+    <div class="card-tools">
+      <button type="button" class="btn btn-tool" (click)="closeTab()"><i class="fas fa-compress"></i>
+      </button>
+    </div>
+  </div>
+  <div class="card-body">
+      <app-web-cam (image)="getImageFromComponent($event)"></app-web-cam>
+  </div>
+</div>
+
+
+
+
+
+
+

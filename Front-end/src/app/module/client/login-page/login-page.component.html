@@ -1,0 +1,62 @@
+<div class="login-page" style="min-height: 512.781px;">
+  <div class="login-box">
+    <div class="login-logo">
+      <a>Welcome to <br><b>IDENTIFICATOR</b></a>
+    </div>
+    <div class="card" *ngIf="!clientLoginStep">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Enter your Email address</p>
+        <form [formGroup]="clientFormGroup" >
+          <div class="input-group mb-3">
+            <input
+                  type="email"
+                  autocomplete="off"
+                  formControlName="email"
+                  name="email"
+                  id="email"
+                  [ngClass]="getEmailButtonClass()"
+                  placeholder="email">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="social-auth-links text-center mb-3">
+          <p> </p>
+          <i *ngIf="!clicked" class='fa fa-spinner fa-spin fa-3x'></i>
+          <button [disabled]="f['email'].invalid" (click)="onLogin()" *ngIf="clicked"  class="btn btn-primary btn-block">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" *ngIf="clientLoginStep">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Enter your Validation Code</p>
+        <form [formGroup]="clientFormGroup" >
+          <div class="input-group mb-3">
+            <input
+                  type="text"
+                  autocomplete="off"
+                  formControlName="validationCode"
+                  name="validationCode"
+                  id="validationCode"
+                  [ngClass]="getValidtionCodeButtonClass()"
+                  placeholder="Validation Code">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="social-auth-links text-center mb-3">
+          <p> </p>
+
+          <button [disabled]="f['validationCode'].invalid" (click)="onValidCode()"  class="btn btn-primary btn-block">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

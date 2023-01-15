@@ -1,0 +1,165 @@
+<!--
+
+<p>edit-identification-page works!</p>
+
+<div class="br-pagebody container-fluid">
+  <div class="br-section-wrapper">
+    <div class="additional">
+      <h3>Upload Documents</h3>
+    </div>
+    <form action="" method="post" enctype = "multipart/form-data" (ngSubmit)="uploadbirthcertificate()">
+      <div class="form-layout form-layout-1">
+        <div class="row">
+
+        </div>
+        <div class="row mg-b-25">
+
+          <div class="col-lg-3">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Upload BirthCertificate</h5>
+                <input type="file" (change)="selectFile($event)" class="form-control" id="pathDocumentImage"  name='pathDocumentImage' />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                  <button class="btn btn-success btn-sm" type="submit">
+                    Upload
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Id ReferenceDocument</h5>
+                <input type="text"   class="form-control" id="pathDocumentImage"  name='pathDocumentImage' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="" method="post" enctype = "multipart/form-data">
+      <div class="form-layout form-layout-1">
+        <div class="row mg-b-25">
+          <div class="col-lg-3">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Upload LostCertificate</h5>
+                <input type="file" (change)="selectFile2($event)" class="form-control" id="pathDocumentImage"  name='pathDocumentImage' />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                  <button class="btn btn-success btn-sm"  (click)="uploadlostcertificate()">
+                    Upload
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="" method="post" enctype = "multipart/form-data">
+      <div class="form-layout form-layout-1">
+        <div class="row mg-b-25">
+          <div class="col-lg-3">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Upload NationalCertificate</h5>
+                <input type="file" (change)="selectFile3($event)" class="form-control" id="pathDocumentImage"  name='pathDocumentImage' />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                  <button class="btn btn-success btn-sm"  (click)="uploadNationalcertificate()">
+                    Upload
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <form action="" method="post" enctype = "multipart/form-data">
+      <div class="form-layout form-layout-1">
+        <div class="row mg-b-25">
+          <div class="col-lg-3">
+
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Upload Image</h5>
+                <input type="file" (change)="selectFile4($event)" class="form-control" id="pathDocumentImage"  name='pathDocumentImage' />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                  <button class="btn btn-success btn-sm"  (click)="uploadImagecertificate()">
+                    Upload
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div *ngIf="currentFile" class="progress my-3">
+  <div
+    class="progress-bar progress-bar-info progress-bar-striped"
+    role="progressbar"
+    attr.aria-valuenow="{{ progress }}"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    [ngStyle]="{ width: progress + '%' }"
+  >
+    {{ progress }}%
+  </div>
+</div>
+
+<div *ngIf="message" class="alert alert-secondary" role="alert">{{ message }}</div>
+
+<div class="card mt-3">
+  <div class="card-header">List of Files</div>
+  <ul
+    class="list-group list-group-flush"
+    *ngFor="let file of fileInfos | async"
+  >
+    <li class="list-group-item">
+      <a href="{{ file.url }}">{{ file.name }}</a>
+    </li>
+  </ul>
+</div>
+
+ -->

@@ -1,0 +1,50 @@
+<div class="login-page" style="min-height: 512.781px;">
+  <div class="login-box">
+    <div class="login-logo">
+      <a>Portail<b>Identification</b></a>
+    </div>
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+        <form  [formGroup]="agentLoginFormGroup">
+          <div class="input-group mb-3">
+            <input
+                  type="text"
+                  autocomplete="off"
+                  formControlName="login"
+                  name="login"
+                  id="login"
+                  [ngClass]="getLoginClass()"
+                  placeholder="Login / Email">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
+              </div>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <input
+                  type="password"
+                  autocomplete="off"
+                  formControlName="password"
+                  name="password"
+                  id="password"
+                  [ngClass]="getPasswordClass()"
+                  name="password"
+                  placeholder="Password">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="social-auth-links text-center mb-3">
+          <p> </p>
+          <i *ngIf="!clicked" class='fa fa-spinner fa-spin fa-3x'></i>
+          <button *ngIf="clicked" [disabled]="agentLoginFormGroup.invalid" (click)="onLogin()"  class="btn btn-primary btn-block">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

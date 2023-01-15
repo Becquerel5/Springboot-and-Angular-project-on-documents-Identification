@@ -1,0 +1,359 @@
+
+
+<div class="layout-top-nav" style="height: auto;">
+  <div class="wrapper" style="background: #f4f6f9;">
+
+    <div class="content" style="min-height: 473px;">
+      <div class="content-header">
+        <div class="container">
+          <div class="row mb-2">
+            <div class="col-sm-12">
+              <div class="container-fluid">
+                <div class="stepper-horizontal" id="stepper1">
+                <div class="step editing">
+                  <div class="step-circle"><span>1</span></div>
+                  <div class="step-title">Information</div>
+                  <div class="step-bar-left"></div>
+                  <div class="step-bar-right"></div>
+                </div>
+                <div class="step">
+                  <div class="step-circle"><span>2</span></div>
+                  <div class="step-title">Information</div>
+                  <div class="step-bar-left"></div>
+                  <div class="step-bar-right"></div>
+                </div>
+                <div class="step">
+                  <div class="step-circle"><span>3</span></div>
+                  <div class="step-title">Confirm</div>
+                  <div class="step-optional"></div>
+                  <div class="step-bar-left"></div>
+                  <div class="step-bar-right"></div>
+                </div>
+                <div class="step">
+                  <div class="step-circle"><span>4</span></div>
+                  <div class="step-title">Success</div>
+                </div>
+              </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card card-info" >
+                <form class="form-horizontal" [formGroup]="referenceDocumentFormGroup" >
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <h1>{{name | uppercase}} FORM N°: {{this.f["idReference"].value}}</h1>
+                        <hr>
+                      </div>
+                      <br>
+
+                    </div>
+                    <div class="row" *ngIf="currentStep==1">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="firstname" class="col-sm-2 col-form-label">FirstName</label>
+                              <div class="col-sm-10">
+                                <input type="text" [formControlName]="constants.form_first_name" [ngClass]="getInputClass('firstName')" name="firstName" id="firstName" placeholder="FirstName">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="lastname" class="col-sm-2 col-form-label">LastName</label>
+                              <div class="col-sm-10">
+                                <input type="text" [formControlName]="constants.form_last_name" name="lastName" [ngClass]="getInputClass('lastName')" id="lastName" placeholder="LastName">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="dateOfBorn" class="col-sm-2 col-form-label">Date of birth</label>
+                              <div class="col-sm-10">
+                                <input type="date" [formControlName]="constants.form_date_of_birth" name="dateOfBirth" [ngClass]="getInputClass('dateOfBirth')" id="dateOfBirth" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                              <div class="col-sm-10">
+                                <select class="form-control" [(ngModel)]="gender" id="gender" name="gender" [ngModelOptions]="{standalone: true}">
+                                  <option [value]="GENDER.male">{{GENDER.male}}</option>
+                                  <option [value]="GENDER.female">{{GENDER.female}}</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="profession" class="col-sm-2 col-form-label">Profession</label>
+                              <div class="col-sm-10">
+                                <input type="text" [formControlName]="constants.form_profession" name="profession" [ngClass]="getInputClass('profession')" id="profession" placeholder="Profession">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="address" class="col-sm-2 col-form-label">Address</label>
+                              <div class="col-sm-10">
+                                <input type="text" [formControlName]="constants.form_address" name="address" [ngClass]="getInputClass('address')" id="address" placeholder="Address">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="fatherName" class="col-sm-2 col-form-label">Father Name</label>
+                              <div class="col-sm-10">
+                                <input type="text" [formControlName]="constants.form_father_name"  name="fatherName" id="fatherName" [ngClass]="getInputClass('fatherName')" placeholder="fatherName">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="motherName" class="col-sm-2 col-form-label">Mother Name</label>
+                              <div class="col-sm-10">
+                                <input type="text" [formControlName]="constants.form_mother_name" name="motherName" [ngClass]="getInputClass('motherName')" id="motherName" placeholder="Mother Name">
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row"  *ngIf="currentStep==1">
+                      <div class="col-md-12">
+                        <button  (click)="onNext()" [disabled]="stepOne()" class="btn btn-primary btn-block">Next</button>
+                      </div>
+                    </div>
+
+                    <div class="row" *ngIf="currentStep==2">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="documentNumber" class="col-sm-2 col-form-label">Id of document</label>
+                              <div class="col-sm-10">
+                                <input type="text" [formControlName]="constants.form_numero_document" name="documentNumber" [ngClass]="getInputClass('documentNumber')" id="documentNumber" placeholder="documentNumber">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row" *ngIf="name=='passport'">
+                              <label for="country" class="col-sm-2 col-form-label">Country</label>
+                              <div class="col-sm-10">
+                                <input type="text" [formControlName]="constants.form_country" name="country" [ngClass]="getInputClass('country')" id="country" placeholder="Country">
+                              </div>
+                            </div>
+                            <div class="form-group row" *ngIf="name=='cni'">
+                              <label for="identificationPoste" class="col-sm-2 col-form-label">Identification Poste</label>
+                              <div class="col-sm-10">
+                                <input type="text" [formControlName]="constants.form_identification_poste" name="identificationPoste" [ngClass]="getInputClass('identificationPoste')" id="identificationPoste" placeholder="Poste d'Identification">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="deliveryDate" class="col-sm-2 col-form-label">Date de deliv:</label>
+                              <div class="col-sm-10">
+                                <input type="date" [formControlName]="constants.form_delivery_date" name="deliveryDate" [ngClass]="getInputClass('deliveryDate')" id="deliveryDate" placeholder="Delivery Date">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="expireDate" class="col-sm-2 col-form-label">Date d'expiration</label>
+                              <div class="col-sm-10">
+                                <input type="date" [formControlName]="constants.form_expire_date" name="expireDate" [ngClass]="getInputClass('expireDate')" id="expireDate" placeholder="expiration Date">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="row"  *ngIf="currentStep==2">
+                      <div class="col-md-6">
+                        <button *ngIf="clicked" (click)="onPrevious()" class="btn btn-danger btn-block">Previous</button>
+                      </div>
+                      <div class="col-md-6">
+                        <i *ngIf="!clicked" class='fa fa-spinner fa-spin fa-3x'></i>
+                        <button *ngIf="clicked" (click)="onNext()" [disabled]="stepTwo()" class="btn btn-primary btn-block">Next</button>
+
+                      </div>
+                    </div>
+
+                    <div class="row" *ngIf="currentStep==3">
+                      <div class="resume">
+                        <h1>Resume of your inputs</h1>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="firstname" class="col-sm-2 col-form-label">FirstName</label>
+                              <div class="col-sm-10">
+                                <input type="text"  name="firstName" class="form-control is-valid" id="firstname" [value]="f['firstName'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="lastname" class="col-sm-2 col-form-label">LastName</label>
+                              <div class="col-sm-10">
+                                <input type="text" name="lastName" class="form-control is-valid" id="lastname" [value]="f['lastName'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="dateOfBorn" class="col-sm-2 col-form-label">Date of birth</label>
+                              <div class="col-sm-10">
+                                <input type="date" name="dateOfBirth" class="form-control is-valid" id="dateOfBirth" [value]="f['dateOfBirth'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                              <div class="col-sm-10">
+                                <input type="text" name="gender" class="form-control is-valid" id="gender" [value]="gender" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="profession" class="col-sm-2 col-form-label">Profession</label>
+                              <div class="col-sm-10">
+                                <input type="text" name="profession" class="form-control is-valid" id="profession" [value]="f['profession'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="address" class="col-sm-2 col-form-label">Address</label>
+                              <div class="col-sm-10">
+                                <input type="text" name="address" class="form-control is-valid" id="address" [value]="f['address'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="fatherName" class="col-sm-2 col-form-label">Father Name</label>
+                              <div class="col-sm-10">
+                                <input type="text" name="nameOfFather" class="form-control is-valid" id="fatherName" [value]="f['fatherName'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="motherName" class="col-sm-2 col-form-label">Mother Name</label>
+                              <div class="col-sm-10">
+                                <input type="text" name="nameOfMother"  class="form-control is-valid" id="motherName" [value]="f['motherName'].value" readonly disabled>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="idReference" class="col-sm-2 col-form-label">Identifiant {{name}}</label>
+                              <div class="col-sm-10">
+                                <input type="text" name="idReference" class="form-control is-valid" id="idReference" [value]="f['idReference'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6" *ngIf="name=='cni'">
+                            <div class="form-group row">
+                              <label for="identificationPoste" class="col-sm-2 col-form-label">Poste d'Identification</label>
+                              <div class="col-sm-10">
+                                <input type="text" name="identificationPoste" class="form-control is-valid" id="identificationPoste" [value]="f['identificationPoste'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6" *ngIf="name=='passport'">
+                            <div class="form-group row">
+                              <label for="country" class="col-sm-2 col-form-label">Pays</label>
+                              <div class="col-sm-10">
+                                <input type="text" name="country" class="form-control is-valid" id="country" [value]="f['country'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="deliveryDate" class="col-sm-2 col-form-label">Date de deliv:</label>
+                              <div class="col-sm-10">
+                                <input type="date" name="deliveryDate" class="form-control is-valid" id="deliveryDate" [value]="f['deliveryDate'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label for="expireDate" class="col-sm-2 col-form-label">Date d'expiration</label>
+                              <div class="col-sm-10">
+                                <input type="date" name="expirationDate" class="form-control is-valid" id="expireDate" [value]="f['expireDate'].value" readonly disabled>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row"  *ngIf="currentStep==3">
+                      <div class="col-md-6">
+                        <button *ngIf="clicked" (click)="onPrevious()" class="btn btn-danger btn-block">Previous</button>
+                      </div>
+                      <div class="col-md-6">
+                        <i *ngIf="!clicked" class='fa fa-spinner fa-spin fa-3x'></i>
+                        <button *ngIf="clicked" (click)="onNext()" type="button"  [disabled]="stepOne() && stepTwo()" class="btn btn-primary btn-block">Confirm</button>
+                      </div>
+                    </div>
+
+                    <div class="row" *ngIf="currentStep==4">
+                      <div class="col-md-12">
+                        <h1>Good Job</h1>
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
